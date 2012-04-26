@@ -4,3 +4,8 @@ S:	Maintained
 F:	board/d-link/dnskw/
 F:	include/configs/dnskw.h
 F:	configs/dns325_defconfig
+
+DNS320 BOARD
+M:	Jamie Lentin <jm@lentin.co.uk>
+S:	Maintained
+F:	configs/dns320_defconfig

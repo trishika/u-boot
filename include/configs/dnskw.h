@@ -25,6 +25,16 @@
 
 #endif /* CONFIG_DNS325 */
 
+#ifdef CONFIG_DNS320
+#define MACH_TYPE_DNS320		3985
+#define CONFIG_MACH_TYPE		MACH_TYPE_DNS320
+#define CONFIG_IDENT_STRING		"\nDNS-320"
+
+#define CONFIG_SYS_KWD_CONFIG		$(SRCTREE)/$(CONFIG_BOARDDIR)/kwbimage.dns320.cfg
+#define CONFIG_SYS_TCLK			166666667	/* 800Mhz */
+
+#endif /* CONFIG_DNS320 */
+
 /*
  * High Level Configuration Options (easy to change)
  */
