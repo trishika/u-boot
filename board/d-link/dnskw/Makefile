@@ -10,4 +10,4 @@
 # SPDX-License-Identifier:	GPL-2.0+
 #
 
-obj-y	:= dns325.o
+obj-y	:= dnskw.o

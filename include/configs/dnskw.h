@@ -10,15 +10,20 @@
  * SPDX-License-Identifier:	GPL-2.0+
  */
 
-#ifndef _CONFIG_DNS325_H
-#define _CONFIG_DNS325_H
+#ifndef _CONFIG_DNSKW_H
+#define _CONFIG_DNSKW_H
 
 /*
  * Machine number definition
  */
+#ifdef CONFIG_DNS325
 #define MACH_TYPE_DNS325		3800
 #define CONFIG_MACH_TYPE		MACH_TYPE_DNS325
-#define CONFIG_IDENT_STRING		"\nD-Link DNS-325"
+#define CONFIG_IDENT_STRING		"\nDNS-325"
+
+#define CONFIG_SYS_KWD_CONFIG		$(SRCTREE)/$(CONFIG_BOARDDIR)/kwbimage.dns325.cfg
+
+#endif /* CONFIG_DNS325 */
 
 /*
  * High Level Configuration Options (easy to change)
@@ -167,4 +172,4 @@
 	"fi;" \
 	"run setnandbootenv subbootcmd;"
 
-#endif /* _CONFIG_DNS325_H */
+#endif /* _CONFIG_DNSKW_H */

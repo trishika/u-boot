@@ -1,4 +1,4 @@
-if TARGET_DNS325
+if TARGET_DNSKW
 
 config SYS_CPU
 	string
@@ -6,7 +6,7 @@ config SYS_CPU
 
 config SYS_BOARD
 	string
-	default "dns325"
+	default "dnskw"
 
 config SYS_VENDOR
 	string
@@ -18,6 +18,6 @@ config SYS_SOC
 
 config SYS_CONFIG_NAME
 	string
-	default "dns325"
+	default "dnskw"
 
 endif
